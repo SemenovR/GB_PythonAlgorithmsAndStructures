@@ -6,19 +6,3 @@ print(f'5 | 6 = {5 | 6}')
 print(f'5 ^ 6 = {5 ^ 6}')
 print(f'5 >> 2 = {5 >> 2}')
 print(f'5 << 2 = {5 << 2}')
-
-
-
-x1 = int(input("Введите координты 1-й точки. х1 " ))
-y1 = int(input("Введите координты 1-й точки. y1 " ))
-x2 = int(input("Введите координты 2-й точки. х2 " ))
-y2 = int(input("Введите координты 2-й точки. y2 " ))
-
-delt_x = x2 - x1
-delt_y = y2 - y1
-
-right = y1 * delt_x - x1 * delt_y
-if (delt_y != 0):
-    print (f'y = {delt_x/delt_y}x+{right/delt_y}')
-else:
-    print("Нет решений!")
