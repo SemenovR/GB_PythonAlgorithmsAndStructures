@@ -58,7 +58,7 @@ def version_3(a):
     return b[0], b[1]
 
 
-def main(size):
+def test(size):
     a = randint(0, size, size)
     print(f'Алгоритм 1')
     print(f'Первое и второе минимальные числа: {version_1(a=a)}')
@@ -66,6 +66,19 @@ def main(size):
     print(f'Первое и второе минимальные числа: {version_2(a=a)}')
     print(f'Алгоритм 3')
     print(f'Первое и второе минимальные числа: {version_3(a=a)}')
+
+
+def main(size):
+    a = randint(0, size, size)
+    version_1(a=a)
+    version_2(a=a)
+    version_3(a=a)
+
+
+#test(100000)
+#test(1000000)
+#test(10000000)
+#test(100000000)
 
 
 cProfile.run('main(100000)')

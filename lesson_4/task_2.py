@@ -48,9 +48,20 @@ def classic_method(k):
     return value
 
 
-def main(i):
+def test(i):
     print(f'Решето Эратосфена {sieve_eratosthenes(i)}')
     print(f'Классический способ: {classic_method(i)}')
+
+
+def main(i):
+    sieve_eratosthenes(i)
+    classic_method(i)
+
+
+#test(1000)
+#test(5000)
+#test(10000)
+#test(50000)
 
 
 cProfile.run('main(1000)')
